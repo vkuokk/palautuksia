@@ -1,0 +1,26 @@
+$TTL   60000
+@              IN SOA   ROOT-SERVER.   root.ROOT-SERVER. (
+                            2006031201 ; serial
+                            28800 ; refresh
+                            14400 ; retry
+                            3600000 ; expire
+                            0 ; negative cache ttl
+                        )
+
+@              IN NS    ROOT-SERVER.
+ROOT-SERVER.   IN A     10.10.0.2
+
+org.           IN NS    nsorg.org.
+nsorg.org.     IN A     10.3.2.2
+
+net.           IN NS    nsnet.net.
+nsnet.net.     IN A     10.5.3.3
+
+fi.            IN NS    nsfi.fi.
+nsfi.fi.       IN A     10.4.1.3
+
+jyu.org.           IN NS    nsjyuorg.jyu.org.
+nsjyuorg.jyu.org.  IN A     10.3.1.3
+
+jyu.net.           IN NS    nsjyunet.jyu.net.
+nsjyunet.jyu.net.  IN A     10.5.2.3

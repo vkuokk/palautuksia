@@ -1,0 +1,8 @@
+ifconfig eth0 10.10.0.1 netmask 255.255.0.0 up
+ifconfig eth1 10.3.0.1 netmask 255.255.0.0 up
+ifconfig eth2 10.4.0.1 netmask 255.255.0.0 up
+ifconfig eth3 10.5.0.1 netmsk 255.255.0.0 up
+
+route add -net 10.3.0.0/16 gw 10.3.0.2 dev eth1
+route add -net 10.4.0.0/16 gw 10.4.0.2 dev eth2
+route add -net 10.5.0.0/16 gw 10.5.0.2 dev eth3

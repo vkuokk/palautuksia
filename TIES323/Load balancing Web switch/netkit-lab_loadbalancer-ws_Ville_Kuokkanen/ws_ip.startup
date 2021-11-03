@@ -1,0 +1,8 @@
+ifconfig eth0 10.0.0.3 netmask 255.255.255.0 up
+ifconfig eth1 100.0.0.6 netmask 255.255.255.0 up
+
+iptables --table nat --append POSTROUTING --source 10.0.0.0/24 --destination 100.0.0.0/24 --jump MASQUERADE
+iptables --table nat --append PREROUTING --destination 10.0.0.3 --source 10.0.0.10 --jump DNAT --to-destination 100.0.0.1
+iptables --table nat --append PREROUTING --destination 10.0.0.3 --source 10.0.0.11 --jump DNAT --to-destination 100.0.0.2
+
+echo "watch 'iptables -t nat -vnL'" >> /root/.bashrc

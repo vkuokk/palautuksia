@@ -1,0 +1,12 @@
+$TTL    60000
+@        IN SOA  nsjyunet.jyu.net.   root.nsjyunet.jyu.net. (
+                    2006031201 ; serial
+                    28800 ; refresh
+                    14400 ; retry
+                    3600000 ; expire
+                    0 ; negative cache ttl
+                 )
+@             IN NS   nsjyunet.jyu.net.
+nsjyunet      IN  A   10.5.2.3
+
+server        IN  A   10.5.2.2

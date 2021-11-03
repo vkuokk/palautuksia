@@ -1,0 +1,5 @@
+ifconfig eth0 200.0.0.40 up
+touch /hostlab/$HOSTNAME.ready
+cd /root
+screen -c /root/screenrc
+

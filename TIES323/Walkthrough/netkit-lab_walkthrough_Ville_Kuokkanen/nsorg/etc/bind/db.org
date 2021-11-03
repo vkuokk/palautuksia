@@ -1,0 +1,13 @@
+$TTL   60000
+@        IN SOA  nsorg.org.  root.nsorg.org. (
+                    2006031201 ; serial
+                    28800 ; refresh
+                    14400 ; retry
+                    3600000 ; expire
+                    0 ; negative cache ttl
+                 )
+@        IN NS   nsorg.org.
+nsorg    IN  A   10.3.2.2
+
+jyu           IN  NS   nsjyuorg.jyu.org.
+nsjyuorg.jyu  IN  A    10.3.1.3
