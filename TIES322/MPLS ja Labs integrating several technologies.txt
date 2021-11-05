@@ -1,0 +1,8 @@
+Aikaa käytetty:
+
+Toimimattoman MPLS lab:n yrittäminen 3h
+
+Labs integrating several technologies 4h
+ - DNS load balancer with RIP
+ - BGP, OSPF and RIP interplay
+ - Two levels load balancing for a web service
